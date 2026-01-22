@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="app-container">
+    <div class="section-products">
+      <h1>Desserts</h1>
+      <div class="products-grid">
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-waffle-tablet.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Waffle with Berries" data-price="6.50">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Waffle</p>
+            <h3>Waffle with barries</h3>
+            <p>$6,50</p>
+          </div>
+        </div>
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-creme-brulee-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Creme Brulee" data-price="7.00">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Creme Brulee</p>
+            <h3>Vanillia Bean Creme Brulee</h3>
+            <p>$7,00</p>
+          </div>
+        </div>
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-macaron-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Macaron" data-price="8.00">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Macaron</p>
+            <h3>Macaron Mix of Five</h3>
+            <p>$8,00</p>
+          </div>
+        </div>
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-tiramisu-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Tiramisu" data-price="5.50">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Tiramisu</p>
+            <h3>Classic Tiramisu</h3>
+            <p>$5,50</p>
+          </div>
+        </div>
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-baklava-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Baklava" data-price="4.00">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Baklava</p>
+            <h3>Pistachio Baklava</h3>
+            <p>$4.00</p>
+          </div>
+        </div>
+         <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-meringue-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Pie" data-price="5.00">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Pie</p>
+            <h3>Lemon Meringue Pie</h3>
+            <p>$5,00</p>
+          </div>
+        </div>
+        <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-cake-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Cake" data-price="4.50">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Cake</p>
+            <h3>Red Valvet Cake</h3>
+            <p>$4,50</p>
+          </div>
+        </div>
+        <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-brownie-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Brownie" data-price="5.50">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Brownie</p>
+            <h3>Salted Caramel Brownie</h3>
+            <p>$5,50</p>
+          </div>
+        </div>
+        <div class="products-card">
+          <div class="products-header">
+           <img src="assets/images/image-panna-cotta-desktop.jpg" alt="">
+           <button class="add-to-card-btn" data-name="Pinna Cotta" data-price="6.50">
+             <img src="assets/images/icon-add-to-cart.svg" alt="">
+             <span>Add to Cart</span>
+           </button>
+          </div>
+          <div class="products-info">
+            <p class="categorie">Panna Cotta</p>
+            <h3>Vanilla Panna Cotta</h3>
+            <p>$6,50</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    <aside>
+      <h1>Your Cart</h1>
+      <div class="cart-section">
+      <img src="assets/images/illustration-empty-cart.svg" alt="">
+      <p>Your added items will appear here</p>
+      </div>
+    </aside>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
