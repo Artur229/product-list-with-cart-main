@@ -76,11 +76,11 @@ body {
     color: #260F08;
     line-height: 1.5;
 }
-.add-to-card-btn img {
+.add-to-cart-btn img {
     width: 20px;
     height: 20px;
 }
-.add-to-card-btn {
+.add-to-cart-btn {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -103,6 +103,13 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.add-to-cart-btn:hover {
+    color: #C73B0F;
+    border-color: #C73B0F;
+}
+.add-to-cart-btn:hover img {
+    filter: invert(32%) sepia(85%) saturate(3695%) hue-rotate(10deg) brightness(92%) contrast(94%);
+}
 aside {
     padding: 24px;
     border-radius: 12px;
@@ -118,6 +125,13 @@ aside h1 {
     color: #C73B0F;
     font-size: 24px;
 }
+.cart-section-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
 .cart-section {
     display: flex;
     flex-direction: column;
@@ -130,4 +144,79 @@ aside h1 {
     font-size: 14px;
     font-weight: 600;
     text-align: center;
+}
+.total {
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #260F08;
+}
+.total-order {
+    color: #918a88;
+    font-size: 14px;
+}
+.total-price {
+    color: #260F08;;
+    margin-left: 150px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.carbon-neutral img {
+    width: 20px;
+    height: 20px;
+}
+.selected-border {
+    border: 2px solid hsl(14, 86%, 42%);
+}
+.quantity-value {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.quantity-control {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(14, 86%, 42%);
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 145px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quantity-control button {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.quantity-control button img {
+    width: 9px;
+    height: 9px;
+}
+.quantity-control button:hover img {
+    filter: invert(32%) sepia(85%) saturate(3695%) hue-rotate(10deg) brightness(92%) contrast(94%);
+}
+.quantity-control button:hover {
+    background-color: #fff;
+}
+.hidden {
+    display: none !important;
+}
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    
+}
+.cart-item-info {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
